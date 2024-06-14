@@ -1,0 +1,29 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "e19c3fd0012314de4c416f4bd7d97e2d"
+name = "bulk-customer-data-app"
+handle = "bulk-customer-data-app"
+application_url = "https://fuzzy-again-rejected-cameroon.trycloudflare.com"
+embedded = true
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "quickstart-1f48c209.myshopify.com"
+include_config_on_deploy = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_customer_data_erasure,write_products"
+
+[auth]
+redirect_urls = [
+  "https://fuzzy-again-rejected-cameroon.trycloudflare.com/auth/callback",
+  "https://fuzzy-again-rejected-cameroon.trycloudflare.com/auth/shopify/callback",
+  "https://fuzzy-again-rejected-cameroon.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2024-04"
+
+[pos]
+embedded = false
